@@ -2,5 +2,7 @@
 {{ $img_caption := .Get 1 | safeHTML }}
 <figure>
 	<img src="{{ $img.RelPermalink }}" alt="{{ $img_caption }}" />
-	<figcaption>{{ $img_caption }}</figcaption>
+	<figcaption style="text-align: center;">
+		<strong>{{ $img_caption }}</strong>
+	</figcaption>
 </figure>
