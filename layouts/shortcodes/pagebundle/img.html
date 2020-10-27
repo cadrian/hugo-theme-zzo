@@ -1,7 +1,7 @@
 {{ $img := $.Page.Resources.GetMatch (.Get 0)}}
 {{ $img_caption := .Get 1 | safeHTML }}
 <figure>
-	<img src="{{ $img.RelPermalink }}" alt="{{ $img_caption }}" style="max-width: 450px;" />
+	<img src="{{ $img.RelPermalink }}" alt="{{ $img_caption }}" style="width: 100%; max-width: 450px;" />
 	<figcaption style="text-align: center;">
 		<strong>{{ $img_caption }}</strong>
 	</figcaption>
