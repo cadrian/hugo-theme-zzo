@@ -13,7 +13,7 @@
           {{ $selected := false }}
             {{ if eq $pageLang .Lang }}
               {{ if .Label }}
-                <a href="{{ $translation.Permalink }}" data-lang="{{ .Lang }}" class="dropdown-item select-theme__item is-active">{{ .Label }}</a>
+                <a href="{{ $translation.Permalink }}" data-lang="{{ .Lang }}" class="dropdown-item is-active">{{ .Label }}</a>
               {{ end }}
             {{ else }}
               {{ if .Label }}
